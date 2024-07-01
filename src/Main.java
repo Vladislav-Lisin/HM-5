@@ -12,9 +12,9 @@ public class Main {
         }
 
         // task 2
-        int  clientDeviceYear = 2016;
+        int clientDeviceYear = 2016;
         clientOS = 1;
-        if (clientDeviceYear < 2015){
+        if (clientDeviceYear < 2015) {
             switch (clientOS) {
                 case 1:
                     System.out.println("Установите облегченную версию приложения для Android по ссылке");
@@ -23,8 +23,7 @@ public class Main {
                     System.out.println("Установите облегченную версию приложения для iOS по ссылке");
                     break;
             }
-        }
-        else switch (clientOS) {
+        } else switch (clientOS) {
             case 1:
                 System.out.println("Установите версию приложения для Android по ссылке");
                 break;
@@ -33,31 +32,30 @@ public class Main {
                 break;
         }
         // task 3
-        int year = 2020;
-        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
-            System.out.println(year + " год является високосным");
-        }
-        else
+        int year = 1000;
+        if (year > 1584) {
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+                System.out.println(year + " год является високосным");
+            }
+        } else {
             System.out.println(year + " год не является високосным");
+        }
 
         // task 4
         int deliveryDistance = 95;
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: 1");
-        }
-        else if (deliveryDistance >= 20 && deliveryDistance < 60 ) {
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             System.out.println("Потребуется дней: 2");
-        }
-        else if (deliveryDistance >= 60 && deliveryDistance <= 100 ) {
+        } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
             System.out.println("Потребуется дней: 3");
-        }
-        else {
+        } else {
             System.out.println("Доставки нет");
         }
 
         // task 5
-        int  monthNumber = 12;
-        switch (monthNumber){
+        int monthNumber = 12;
+        switch (monthNumber) {
             case 1:
                 System.out.println("Данный месяц принадлежит к сезону зимы");
                 break;
